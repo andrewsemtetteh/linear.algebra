@@ -157,7 +157,7 @@ num_cols = st.number_input('Number of Columns', min_value=1, value=2)
 A_input = st.text_area(f'Matrix A ({num_rows}x{num_cols})', 
                        value='\n'.join(['[' + ', '.join(['0'] * num_cols) + ']'] * num_rows))
 
-b_input = st.text_area(f'Matrix b ({num_rows}x1)', 
+b_input = st.text_area(f'Vector b ({num_rows}x1)', 
                        value='\n'.join(['[0]'] * num_rows))
 
 if st.button('Solve'):
